@@ -25,13 +25,15 @@ pub fn include_rgba(input: TokenStream) -> TokenStream {
         }
     };
 
-    let dimensions = image.dimensions();
+    let image = image.into_rgba();
 
-    let bytes = image.into_rgba().into_raw();
+    let (x, y) = image.dimensions();
+
+    let bytes = image.into_raw();
 
     TokenStream::from(quote! {{
         (
-            #dimensions,
+            (#x, #y),
             [
                 #( #bytes, )*
             ]
