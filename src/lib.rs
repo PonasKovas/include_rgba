@@ -34,7 +34,7 @@ pub fn include_rgba(input: TokenStream) -> TokenStream {
     TokenStream::from(quote! {{
         (
             (#x, #y),
-            [
+            &[
                 #( #bytes, )*
             ]
         )
