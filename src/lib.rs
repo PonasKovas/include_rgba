@@ -3,9 +3,6 @@ extern crate proc_macro;
 use image::open;
 use proc_macro::TokenStream;
 use quote::quote;
-use std::env::var;
-use std::fs::read_dir;
-use std::path::{Path, PathBuf};
 use syn::{Expr, Lit};
 
 #[proc_macro]
