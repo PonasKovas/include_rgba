@@ -29,6 +29,9 @@ pub fn include_rgba(input: TokenStream) -> TokenStream {
     let bytes = image.into_raw();
 
     TokenStream::from(quote! {{
+        // hopefully the compiler will optimize this away but this is needed
+        // so the package is rebuilt after changes to the included image.
+        let _ = include_bytes!(concat!(env!("CARGO_MANIFEST_DIR"), "/", #path));
         (
             (#x, #y),
             &[
