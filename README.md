@@ -1,5 +1,7 @@
 # include_rgba
 
+![Crates.io](https://img.shields.io/crates/v/include_rgba)
+
 A Rust procedural macro for convenient including of images, textures as RGBA pixel array.
 
 ## Usage
