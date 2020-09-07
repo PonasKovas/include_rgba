@@ -5,6 +5,9 @@ authors = ["Ponas <mykolas.peteraitis@gmail.com>"]
 edition = "2018"
 readme = "README.md"
 license-file = "LICENSE"
+repository = "https://github.com/PonasKovas/include_rgba"
+homepage = "https://github.com/PonasKovas/include_rgba"
+description = "A Rust procedural macro for convenient including of images or textures as RGBA pixel arrays"
 
 [dependencies]
 syn = "1.0.12"
