@@ -3,6 +3,8 @@ name = "include_rgba"
 version = "0.1.0"
 authors = ["Ponas <mykolas.peteraitis@gmail.com>"]
 edition = "2018"
+readme = "README.md"
+license-file = "LICENSE"
 
 [dependencies]
 syn = "1.0.12"
