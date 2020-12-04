@@ -4,6 +4,8 @@
 
 A Rust procedural macro for convenient including of images, textures as RGBA pixel array.
 
+**WARNING! I've found that for some reason this macro results in REALLY long compile times, (going up to 10 min for just a few small images, even with caching). I wouldn't suggest using this crate in any case ever.**
+
 ## Usage
 
 ```rust
